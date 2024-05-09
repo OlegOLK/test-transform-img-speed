@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <img class="hello" src="https://wlt-p-001.sitecorecontenthub.cloud/api/public/content/ced9467dae2d4faa98d61a4d7d02e72f" />
+    <img class="hello" src="https://wlt-p-001.sitecorecontenthub.cloud/api/public/content/25d6fa0879d94d82b76542a1ac8470e4" />
+    <img class="hello" src="https://wlt-p-001.sitecorecontenthub.cloud/api/public/content/222c48645ffa4f08bba5c999059c391f" />
+    <img class="hello" src="https://wlt-p-001.sitecorecontenthub.cloud/api/public/content/f28b495283f44894bbe55456b01d207a" />
+    <img class="hello" src="https://wlt-p-001.sitecorecontenthub.cloud/api/public/content/7e01bf53eff34bc68c769f10061b0753" />
+    <img class="hello" src="https://wlt-p-001.sitecorecontenthub.cloud/api/public/content/4aa39bea85614f32b6eb400b7063c5a8" />
+    <img class="hello" src="https://wlt-p-001.sitecorecontenthub.cloud/api/public/content/11733e1b002c4cc68a63585378f9b366" />
+    <img class="hello" src="https://wlt-p-001.sitecorecontenthub.cloud/api/public/content/3f94ac62b57c4184ba67347534700d69" />
+    <img class="hello" src="https://wlt-p-001.sitecorecontenthub.cloud/api/public/content/456d03a4898d4e1f8407509c0b699c89" />
+    <img class="hello" src="https://wlt-p-001.sitecorecontenthub.cloud/api/public/content/5701871468194578b9ab524cc6501f3b" />
+    <img class="hello" src="https://wlt-p-001.sitecorecontenthub.cloud/api/public/content/893a877d632e4678a4c8a0628dfeb99f" />
+    <img class="hello" src="https://wlt-p-001.sitecorecontenthub.cloud/api/public/content/28dd266021364194ae63041d1ee395b7" />
+    <img class="hello" src="https://wlt-p-001.sitecorecontenthub.cloud/api/public/content/a8041847cc3845a3a426bc103f8f970d" />
+    <img class="hello" src="https://wlt-p-001.sitecorecontenthub.cloud/api/public/content/69d13767582444b09db05157003c1d67" />
+    <img class="hello" src="https://wlt-p-001.sitecorecontenthub.cloud/api/public/content/36002a478f1c4df4850b55bca20cc365" />
+
+
+    <script lang="js" defer="true">
+
+        let collection = window.document.getElementsByTagName("img");
+        for(var i = 0; i < collection.length; i++){
+            var value = collection[i].getAttribute("src");
+            collection[i].src += new URL(window.location).search;
+            console.log(collection[i].src);
+        }
+
+
+        // .forEach(el => {
+        //     var value = el.getAttribute("src");
+        //     el.attr('src', value += new URL(window.location).search);
+        //     console.log(el.src);
+        // })
+    </script>
+</body>
+
+</html>
